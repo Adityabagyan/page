@@ -7,25 +7,104 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       margin: 0;
-      background-color: #eaf7ff;
+      padding: 0;
+      background-color: #f4f4f9;
     }
-    .container {
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
       text-align: center;
     }
-    h1 {
-      color: #333;
+    nav {
+      background-color: #444;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+    }
+    nav a:hover {
+      background-color: #555;
+      border-radius: 4px;
+    }
+    .hero {
+      text-align: center;
+      background: url('https://via.placeholder.com/1920x500') no-repeat center center/cover;
+      color: white;
+      padding: 5rem 1rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .container {
+      padding: 2rem;
+      text-align: center;
+    }
+    .container img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      margin: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .about-section {
+      background-color: #eef7ff;
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to the Dashboard!</h1>
-    <p>You have successfully logged in.</p>
+  <header>
+    <h1>Welcome to the Dashboard</h1>
+  </header>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+  <div class="hero">
+    <h1>Explore Your Dashboard</h1>
+    <p>Access everything you need in one place</p>
   </div>
+  <div class="container" id="about">
+    <h2>About Us</h2>
+    <div class="about-section">
+      <p>
+        We are a team of passionate individuals dedicated to delivering amazing experiences through our platform. Our mission is to provide a seamless and engaging interface for all users.
+      </p>
+    </div>
+  </div>
+  <div class="container" id="gallery">
+    <h2>Gallery</h2>
+    <img src="https://via.placeholder.com/300x200" alt="Sample Image 1">
+    <img src="https://via.placeholder.com/300x200" alt="Sample Image 2">
+    <img src="https://via.placeholder.com/300x200" alt="Sample Image 3">
+  </div>
+  <div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@example.com</p>
+    <p>Phone: +123 456 7890</p>
+  </div>
+  <footer>
+    <p>&copy; 2025 Dashboard Platform. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
+
